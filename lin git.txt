@@ -1,0 +1,208 @@
+
+User1@DESKTOP-4836353 MINGW64 ~/Desktop/GIT (main)
+$
+
+User1@DESKTOP-4836353 MINGW64 ~/Desktop/GIT (main)
+$
+
+User1@DESKTOP-4836353 MINGW64 ~/Desktop/GIT (main)
+$ echo "# GIT" >> README.md
+
+User1@DESKTOP-4836353 MINGW64 ~/Desktop/GIT (main)
+$ ls
+README.md
+
+User1@DESKTOP-4836353 MINGW64 ~/Desktop/GIT (main)
+$ cat README.md
+# GIT
+
+User1@DESKTOP-4836353 MINGW64 ~/Desktop/GIT (main)
+$ git init
+Initialized empty Git repository in C:/Users/User1/Desktop/GIT/.git/
+
+User1@DESKTOP-4836353 MINGW64 ~/Desktop/GIT (master)
+$ git add README.md ^C
+
+User1@DESKTOP-4836353 MINGW64 ~/Desktop/GIT (master)
+$ git add README.md
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+
+User1@DESKTOP-4836353 MINGW64 ~/Desktop/GIT (master)
+$ git commit -m "new"
+[master (root-commit) 7ca8f3a] new
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+User1@DESKTOP-4836353 MINGW64 ~/Desktop/GIT (master)
+$ git branch -M main
+
+User1@DESKTOP-4836353 MINGW64 ~/Desktop/GIT (main)
+$ 3 MINGW64 ~/Desktop/GIT (main)
+bash: syntax error near unexpected token `('
+
+User1@DESKTOP-4836353 MINGW64 ~/Desktop/GIT (main)
+$ $ git add README.md
+bash: $: command not found
+
+User1@DESKTOP-4836353 MINGW64 ~/Desktop/GIT (main)
+$ git remote add origin git@github.com:tati1129/GIT.git
+
+User1@DESKTOP-4836353 MINGW64 ~/Desktop/GIT (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 212 bytes | 212.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:tati1129/GIT.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+User1@DESKTOP-4836353 MINGW64 ~/Desktop/GIT (main)
+$ git add rte
+fatal: pathspec 'rte' did not match any files
+
+User1@DESKTOP-4836353 MINGW64 ~/Desktop/GIT (main)
+$ git add rte.txt
+
+User1@DESKTOP-4836353 MINGW64 ~/Desktop/GIT (main)
+$ ls
+README.md  rte.txt
+
+User1@DESKTOP-4836353 MINGW64 ~/Desktop/GIT (main)
+$ git commit -m "add rte.txt"
+[main e531dff] add rte.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 rte.txt
+
+User1@DESKTOP-4836353 MINGW64 ~/Desktop/GIT (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 273 bytes | 273.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:tati1129/GIT.git
+   7ca8f3a..e531dff  main -> main
+
+User1@DESKTOP-4836353 MINGW64 ~/Desktop/GIT (main)
+$ git add Linux
+
+User1@DESKTOP-4836353 MINGW64 ~/Desktop/GIT (main)
+$ ls
+Linux/  README.md  rte.txt
+
+User1@DESKTOP-4836353 MINGW64 ~/Desktop/GIT (main)
+$ git commit -m "add Linux"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+User1@DESKTOP-4836353 MINGW64 ~/Desktop/GIT (main)
+$ git push
+Everything up-to-date
+
+User1@DESKTOP-4836353 MINGW64 ~/Desktop/GIT (main)
+$ git push -u origin main
+Everything up-to-date
+branch 'main' set up to track 'origin/main'.
+
+User1@DESKTOP-4836353 MINGW64 ~/Desktop/GIT (main)
+$ git push
+Everything up-to-date
+
+User1@DESKTOP-4836353 MINGW64 ~/Desktop/GIT (main)
+$ ls
+Linux/  README.md  rte.txt
+
+User1@DESKTOP-4836353 MINGW64 ~/Desktop/GIT (main)
+$ git branch -M main1
+
+User1@DESKTOP-4836353 MINGW64 ~/Desktop/GIT (main1)
+$ git rm rte.txt
+rm 'rte.txt'
+
+User1@DESKTOP-4836353 MINGW64 ~/Desktop/GIT (main1)
+$ git commit -m "delete file"
+[main1 8a6f78f] delete file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 rte.txt
+
+User1@DESKTOP-4836353 MINGW64 ~/Desktop/GIT (main1)
+$ git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'github.com:tati1129/GIT.git'
+
+User1@DESKTOP-4836353 MINGW64 ~/Desktop/GIT (main1)
+$ git push origin main1
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (1/1), done.
+Writing objects: 100% (2/2), 229 bytes | 229.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'main1' on GitHub by visiting:
+remote:      https://github.com/tati1129/GIT/pull/new/main1
+remote:
+To github.com:tati1129/GIT.git
+ * [new branch]      main1 -> main1
+
+User1@DESKTOP-4836353 MINGW64 ~/Desktop/GIT (main1)
+$ ls
+Linux/  README.md
+
+User1@DESKTOP-4836353 MINGW64 ~/Desktop/GIT (main1)
+$ git add Linux/					//Добавить папку
+
+User1@DESKTOP-4836353 MINGW64 ~/Desktop/GIT (main1)
+$ git commit -m "Linux"
+On branch main1
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+User1@DESKTOP-4836353 MINGW64 ~/Desktop/GIT (main1)
+$ git push origin main1
+Everything up-to-date
+
+User1@DESKTOP-4836353 MINGW64 ~/Desktop/GIT (main1)
+$ git add Linux
+
+User1@DESKTOP-4836353 MINGW64 ~/Desktop/GIT (main1)
+$ git commit -m "Linux"
+On branch main1
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Linux/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+User1@DESKTOP-4836353 MINGW64 ~/Desktop/GIT (main1)
+$ git add Linux
+warning: in the working copy of 'Linux/README.md', LF will be replaced by CRLF the next time Git touches it
+
+User1@DESKTOP-4836353 MINGW64 ~/Desktop/GIT (main1)
+$ git commit -m "Linux"
+[main1 371dc2b] Linux
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Linux/README.md
+
+User1@DESKTOP-4836353 MINGW64 ~/Desktop/GIT (main1)
+$ git push origin main1
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 262 bytes | 262.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:tati1129/GIT.git
+   8a6f78f..371dc2b  main1 -> main1
+
+User1@DESKTOP-4836353 MINGW64 ~/Desktop/GIT (main1)
+$
