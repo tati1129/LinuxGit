@@ -1,0 +1,30 @@
+   0 cd /tmp
+   1 echo "Hello student" > hello.txt
+   2 cat /etc/group | wc >> hello.txt
+   3 cat /etc/group | tail -1 >> hello.txt
+   4 cat /etc/group | wc -l >> hello.txt
+   5 history > /tmp/history.txt
+
+
+localhost:~# cd ..
+localhost:/# echo "24.08.2022" > date.txt
+localhost:/# ls
+bin       etc       media     proc      sbin      tmp
+date.txt  home      mnt       root      srv       usr
+dev       lib       opt       run       sys       var
+localhost:/# cat date.txt
+24.08.2022
+localhost:/#cd..
+
+localhost:~# date > /tmp/date.txt
+localhost:~# cd ..
+localhost:/# cd tmp
+localhost:/tmp# ls
+date.txt
+localhost:/tmp# cat date.txt
+Wed Aug 24 17:00:42 UTC 2022
+localhost:/tmp# ^C
+
+
+date > /tmp/date.txt 
+cat /tmp/date.txt

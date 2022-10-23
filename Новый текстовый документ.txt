@@ -1,0 +1,80 @@
+(ГЕНЕРАЦИЯ ПАРЫ КЛЮЧЕЙ)
+(ДЕЛАЕТСЯ 1 РАЗ В ЖИЗНИ)
+(ДЕЛАЕТСЯ НА РАБ.КОМПЬЮТЕРЕ)
+ssh-keygen -t rsa
+
+ЗАГРУЗКА ПУБЛИЧНОГО НА СЕРВЕР (2 ВАРИАНТА):
+1. ssh-copy-id USER@SERVER (запросит пароль=telran23)
+(USER=xsp, SERVER=telran.ab88.space)
+2. вручную добавить ключ в файл ~/.ssh/authorized_keys (дом.каталог)
+
+СПОСОБЫ АВТОРИЗАЦИИ НА УД.СЕРВЕРЕ (ОСНОВНЫЕ)
+1. По паролю
+2. По публичному ключу (беспарольный вход)
+
+GITHUB PAGES
+
+
+GITHUB
+(ЗАГРУЗКА Д/З)
+
+1. Создать локальный репозиторий
+2. Создать уд. репозиторий
+3. Загрузить локальный реп. на GitHub
+
+(ПЕРВАЯ ЧАСТЬ)
+git remote add origin 
+(ПЕРВАЯ ЧАСТЬ)
+git init (создать новый реп)
+git add . (добавить в очередь на коммит все файлы)
+git commit -m 'Любой комментарий к комиту'
+
+(ВТОРАЯ ЧАСТЬ)
+1. Создать реп на Github
+2. Выбрать и скопировать ссылку SSH
+
+(ТРЕТЬЯ ЧАСТЬ)
+git remote add origin <скопированная_ссылка> (делает привязку локального репо к репо на GitHub)
+git push -u origin master (загрузить локальный реп на GitHub)
+(ПРИ КАЖДОЙ Д/З)
+git add .
+git commit -m 'Добавил(-а) новую ДЗ'
+git push origin master
+
+
+
+
+
+User1@DESKTOP-4836353 MINGW64 ~/Desktop/Homework/FE
+$ git init
+Initialized empty Git repository in C:/Users/User1/Desktop/Homework/FE/.git/
+
+User1@DESKTOP-4836353 MINGW64 ~/Desktop/Homework/FE (master)
+$ git add .
+
+User1@DESKTOP-4836353 MINGW64 ~/Desktop/Homework/FE (master)
+$ git commit -m 'home work'
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'User1@DESKTOP-4836353.(none)')
+
+User1@DESKTOP-4836353 MINGW64 ~/Desktop/Homework/FE (master)
+$ git remote add origin git@github.com:tati1129/telran_fe.git
+
+User1@DESKTOP-4836353 MINGW64 ~/Desktop/Homework/FE (master)
+$ git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'github.com:tati1129/telran_fe.git'
+
+User1@DESKTOP-4836353 MINGW64 ~/Desktop/Homework/FE (master)
+$

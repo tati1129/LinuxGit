@@ -1,0 +1,8 @@
+   0 date > date.txt
+   1 df -h
+   2 df -h | awk '{print $5}' | head -2 >> date.txt
+   3 cat date.txt
+   4 cat /proc/cpuinfo
+   5 cat /proc/cpuinfo | grep -w vendor_id >> date.txt
+   6 nano date.txt
+   7 history > /tmp/history.txt

@@ -1,0 +1,117 @@
+df -h
+df -h | awk '{print $5}'
+df -h | grep -w /
+df -h | grep -w / | awk '{print $5}'
+df -h | grep -w / | awk '{print $5}' | sed 's/%/ IVAN/g'
+df -h | grep -w / | awk '{print $5}' | sed 's/%/ /g'
+
+df -h | grep -o 47
+df -h | grep -w / | awk '{print $5}' | head -2
+df -h | grep -w / | awk '{print $5}' | head -2 | tail -1
+df -h | grep -w / | awk '{print $5}' | grep 47
+df -h | grep -w / | awk '{print $5}' | sed 's/%/+/'
+awk --help
+BusyBox v1.31.1 () multi-call binary.
+ 
+Usage: awk [OPTIONS] [AWK_PROGRAM] [FILE]...
+ 
+        -v VAR=VAL      Set variable
+        -F SEP          Use SEP as field separator
+        -f FILE         Read program from FILE
+        -e AWK_PROGRAM
+
+
+
+
+Loading...
+ 
+Welcome to JS/Linux (i586)
+ 
+Use 'vflogin username' to connect to your account.
+You can create a new account at https://vfsync.org/signup .
+Use 'export_file filename' to export a file to your computer.
+Imported files are written to the home directory.
+ 
+localhost:~# df -h
+Filesystem                Size      Used Available Use% Mounted on
+/dev/root                 4.9G      2.3G      2.6G  47% /
+devtmpfs                 91.3M         0     91.3M   0% /dev
+tmpfs                    91.4M      8.0K     91.4M   0% /run
+none                     91.4M         0     91.4M   0% /dev/shm
+localhost:~# df -h | awk '{print $5}'
+Use%
+47%
+0%
+0%
+0%
+localhost:~# df -h | grep -w /
+/dev/root                 4.9G      2.3G      2.6G  47% /
+localhost:~# df -h | grep -w / awk '{print $5}'
+grep: awk: No such file or directory
+grep: {print $5}: No such file or directory
+localhost:~# df -h | grep -w / | awk '{print $5}'
+47%
+localhost:~# df -h | grep -w / | awk '{print $5}' | sed 's/%/ IVAN/g'
+
+ZZ (Note: capitals) - Save and exit
+:q! - discard all changes, since the last save, and exit
+:w - save file but don't exit
+:wq - again, save and exit
+:x - again, save and exit
+G  (shift g) - move to the last line
+/ - search (n - next) 
+i - insert text, edit mode. ECS to exit 
+u - undo last action
+dd - delete the current line ( i mode not needed) 
+Del - delete single character ( i mode not needed)
+::::::::::::::::::
+
+
+Wed Aug 24 17:00:42 UTC 2022
+localhost:/tmp# ^C
+localhost:/tmp# dc ..
+dc: input error: Is a directory
+localhost:/tmp# cd ..
+localhost:/# cat date.txt
+cat: can't open 'date.txt': No such file or directory
+localhost:/# cat /tmp/date.txt
+Wed Aug 24 17:00:42 UTC 2022
+localhost:/# df -h | >> date.txt
+localhost:/# cat /tmp/date.txt
+Wed Aug 24 17:00:42 UTC 2022
+localhost:/# df -h | >> /tmp/date.txt
+localhost:/# cat /tmp/date.txt
+Wed Aug 24 17:00:42 UTC 2022
+localhost:/#
+localhost:/# Cat /etc/group
+sh: Cat: not found
+localhost:/# df -h
+Filesystem                Size      Used Available Use% Mounted on
+/dev/root                 4.9G      2.3G      2.6G  47% /
+devtmpfs                 91.3M         0     91.3M   0% /dev
+tmpfs                    91.4M      8.0K     91.4M   0% /run
+none                     91.4M         0     91.4M   0% /dev/shm
+localhost:/# df -h | grep -w /
+/dev/root                 4.9G      2.3G      2.6G  47% /
+localhost:/# df -h | grep -w / awk '{print $4}’ >>/tmp/date.txt
+
+dz
+
+
+localhost:~# date > date.txt
+localhost:~# cat date.txt
+df -h
+df -h | grep -w 47%
+df -h | awk '{print $5}' | head -2 >> date.txt
+cat date.txt
+history | tail -5 >> date.txt
+cat date.txt
+cat /proc/cpuinfo
+cat /proc/cpuinfo | grep -w vendor_id >> date.txt
+cat date.txt
+nano date.txthistory
+cat date.txt
+
+
+
+

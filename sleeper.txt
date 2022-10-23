@@ -1,0 +1,51 @@
+#!/bin/bash
+
+for run in {1..10}
+do
+date +"%H:%M:%S"
+ps -ef | wc -l
+sleep 2
+done
+echo Alpine
+
+
+for NUM in {50..100}
+for NUM in {50..100}
+do
+touch $NUM.txt
+done
+
+
+
+
+
+#!/bin/bash
+
+echo "Hello!"
+echo -n "Enter your name!"
+read name
+echo "Hello $name, welcome to the system"
+
+mkdir /tmp/test
+touch /tmp/mydate.txt
+date + "%H:%M:%S" > /tmp/mydate.txt
+echo "Saving data"
+
+for run in {1..10}
+do
+echo $run
+sleep 0.5
+done
+echo "Data saved continue working"
+
+df -h >>/tmp/mydate.txt
+mkdir /opt/mydate
+cp /tmp/mydate.txt /opt/mydate/newmydate.txt
+
+for run in {1..5}
+do
+echo $run
+sleep 1
+done
+echo "Done Boss"
+
