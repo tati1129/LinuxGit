@@ -1,0 +1,33 @@
+html, body, .wrapper{
+    height: 100%;
+}
+body{
+    margin: 0;
+}
+.wrapper{
+width: 100%;
+display: grid;
+grid-template-columns: 30% 70%;
+grid-template-rows: 25% 50% 25%;
+grid-template-areas: 
+"header header"
+"aside main"
+"footer footer"
+;
+}
+header{
+grid-area: header;
+background: yellow;
+}
+aside{
+    grid-area: aside;
+    background: lightgray;
+}
+main{
+    grid-area: main;
+    background: gold;
+}
+footer{
+    grid-area: footer;
+    background: grey;
+}

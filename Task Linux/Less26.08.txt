@@ -1,0 +1,161 @@
+
+User1@DESKTOP-4836353 MINGW64 ~
+$ cd ~/Linux
+bash: cd: /c/Users/User1/Linux: No such file or directory
+
+User1@DESKTOP-4836353 MINGW64 ~
+$ cd: /c/Users/User1/Linux
+bash: cd:: command not found
+
+User1@DESKTOP-4836353 MINGW64 ~
+$  cd ~/c/Users/User1/Linux
+bash: cd: /c/Users/User1/c/Users/User1/Linux: No such file or directory
+
+User1@DESKTOP-4836353 MINGW64 ~
+$ cd ~/Linux
+
+User1@DESKTOP-4836353 MINGW64 ~/Linux
+$ ls -lah
+total 22K
+drwxr-xr-x 1 User1 197121    0 Aug 26 10:28  ./
+drwxr-xr-x 1 User1 197121    0 Aug 26 10:28  ../
+-rw-r--r-- 1 User1 197121  720 Aug 24 17:55 'history (2).txt'
+-rw-r--r-- 1 User1 197121  231 Aug 24 22:58 'history (3).txt'
+-rw-r--r-- 1 User1 197121  478 Aug 14 14:24  history.txt
+-rw-r--r-- 1 User1 197121 3.5K Aug 24 23:05  linux23.08.txt
+
+User1@DESKTOP-4836353 MINGW64 ~/Linux
+$ cd ~/Linux
+
+User1@DESKTOP-4836353 MINGW64 ~/Linux
+$ ls -lah
+total 22K
+drwxr-xr-x 1 User1 197121    0 Aug 26 10:28  ./
+drwxr-xr-x 1 User1 197121    0 Aug 26 10:28  ../
+-rw-r--r-- 1 User1 197121  720 Aug 24 17:55 'history (2).txt'
+-rw-r--r-- 1 User1 197121  231 Aug 24 22:58 'history (3).txt'
+-rw-r--r-- 1 User1 197121  478 Aug 14 14:24  history.txt
+-rw-r--r-- 1 User1 197121 3.5K Aug 24 23:05  linux23.08.txt
+
+User1@DESKTOP-4836353 MINGW64 ~/Linux
+$ tar cf project.tar history.txt linux23.08.txt
+
+User1@DESKTOP-4836353 MINGW64 ~/Linux
+$ ls -lah
+total 34K
+drwxr-xr-x 1 User1 197121    0 Aug 26 10:35  ./
+drwxr-xr-x 1 User1 197121    0 Aug 26 10:28  ../
+-rw-r--r-- 1 User1 197121  720 Aug 24 17:55 'history (2).txt'
+-rw-r--r-- 1 User1 197121  231 Aug 24 22:58 'history (3).txt'
+-rw-r--r-- 1 User1 197121  478 Aug 14 14:24  history.txt
+-rw-r--r-- 1 User1 197121 3.5K Aug 24 23:05  linux23.08.txt
+-rw-r--r-- 1 User1 197121  10K Aug 26 10:35  project.tar
+
+User1@DESKTOP-4836353 MINGW64 ~/Linux
+$ gzip project.tar
+
+User1@DESKTOP-4836353 MINGW64 ~/Linux
+$ ls -lah
+total 26K
+drwxr-xr-x 1 User1 197121    0 Aug 26 10:44  ./
+drwxr-xr-x 1 User1 197121    0 Aug 26 10:28  ../
+-rw-r--r-- 1 User1 197121  720 Aug 24 17:55 'history (2).txt'
+-rw-r--r-- 1 User1 197121  231 Aug 24 22:58 'history (3).txt'
+-rw-r--r-- 1 User1 197121  478 Aug 14 14:24  history.txt
+-rw-r--r-- 1 User1 197121 3.5K Aug 24 23:05  linux23.08.txt
+-rw-r--r-- 1 User1 197121 1.5K Aug 26 10:35  project.tar.gz
+
+User1@DESKTOP-4836353 MINGW64 ~/Linux
+$ rm project.tar.gz
+
+User1@DESKTOP-4836353 MINGW64 ~/Linux
+$ ls -lah
+total 22K
+drwxr-xr-x 1 User1 197121    0 Aug 26 10:47  ./
+drwxr-xr-x 1 User1 197121    0 Aug 26 10:28  ../
+-rw-r--r-- 1 User1 197121  720 Aug 24 17:55 'history (2).txt'
+-rw-r--r-- 1 User1 197121  231 Aug 24 22:58 'history (3).txt'
+-rw-r--r-- 1 User1 197121  478 Aug 14 14:24  history.txt
+-rw-r--r-- 1 User1 197121 3.5K Aug 24 23:05  linux23.08.txt
+
+User1@DESKTOP-4836353 MINGW64 ~/Linux
+$ tar cfvz project.tar.gz history.txt linux23.08.txt
+history.txt
+linux23.08.txt
+
+User1@DESKTOP-4836353 MINGW64 ~/Linux
+$ ls -lah
+total 26K
+drwxr-xr-x 1 User1 197121    0 Aug 26 10:49  ./
+drwxr-xr-x 1 User1 197121    0 Aug 26 10:28  ../
+-rw-r--r-- 1 User1 197121  720 Aug 24 17:55 'history (2).txt'
+-rw-r--r-- 1 User1 197121  231 Aug 24 22:58 'history (3).txt'
+-rw-r--r-- 1 User1 197121  478 Aug 14 14:24  history.txt
+-rw-r--r-- 1 User1 197121 3.5K Aug 24 23:05  linux23.08.txt
+-rw-r--r-- 1 User1 197121 1.5K Aug 26 10:49  project.tar.gz
+
+User1@DESKTOP-4836353 MINGW64 ~/Linux
+$ ls -lah project.tar.gz
+-rw-r--r-- 1 User1 197121 1.5K Aug 26 10:49 project.tar.gz
+
+User1@DESKTOP-4836353 MINGW64 ~/Linux
+$ scp project.tar.gz xsp@telran.ab88.space:~/
+project.tar.gz                                                                                                                            100% 1449    29.2KB/s   00:00
+
+User1@DESKTOP-4836353 MINGW64 ~/Linux
+$
+
+
+
+
+
+
+
+
+
+потом
+
+
+
+
+
+
+в др окно на сервер
+xsp@188-93-211-247:~$ ls -lah scp project.tar.gz
+ls: cannot access 'scp': No such file or directory
+-rw-r--r-- 1 xsp xsp 1.5K Aug 26 11:57 project.tar.gz
+xsp@188-93-211-247:~$ ls -lah project.tar.gz
+-rw-r--r-- 1 xsp xsp 1.5K Aug 26 11:57 project.tar.gz
+xsp@188-93-211-247:~$ tar xvf project.tar.gz
+history.txt
+linux23.08.txt
+xsp@188-93-211-247:~$ ls -lah history.txt
+-rw-r--r-- 1 xsp xsp 478 Aug 14 15:24 history.txt
+xsp@188-93-211-247:~$ cat history.txt
+   0 cd ..
+   1 ls
+   2 mkdir /home/animals/
+   3 cd /home/animals
+   4 mkdir dogs cats fish
+   5 cd dogs
+   6 touch pluto.txt
+   7 cd /home/animals/cats
+   8 touch garfield.txt
+   9 cd /home/animals/fish
+  10 touch nemo.txt
+  11 cd /tmp
+  12 touch adam.txt
+  13 cd /home
+  14 mkdir humans
+  15 cd /tmp
+  16 cp adam.txt /home/humans/
+  17 touch evA.txt
+  18 mv evA.txt /opt/eva.txt
+  19 cd /opt
+  20 mv eva.txt /home/humans
+  21 ls /home/humans
+  22 history > /tmp/history.txt
+xsp@188-93-211-247:~$
+
+
+
